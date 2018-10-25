@@ -18,6 +18,7 @@ import com.kjw.twentyhour.fragment.ChangePasswordDialog;
 import com.kjw.twentyhour.fragment.ProfileFragment;
 import com.kjw.twentyhour.fragment.StateFragment;
 import com.kjw.twentyhour.fragmenttofragmentinterface.FragmentDataSendInterface;
+import com.kjw.twentyhour.helper.BottomNavigationViewHelper;
 
 
 public class StateActivity extends AppCompatActivity implements ChangePasswordDialog.Listener , CalendarFragment.onSetDateListener , FragmentDataSendInterface {
@@ -151,7 +152,7 @@ public class StateActivity extends AppCompatActivity implements ChangePasswordDi
                 return false;
             }
         });
-//        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
 
 
 

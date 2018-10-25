@@ -53,7 +53,7 @@ public class CalculartorFragment extends Fragment {
 //
 //        }
 
-
+        fromAtivity = getArguments();
 
         selectedFoodData = (ArrayList<Food>) getArguments().getSerializable("selectedFood");
 

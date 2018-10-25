@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yogida"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:drawableStart="@drawable/ic_twotone_map_24px"
+            android:background="@drawable/bg_basic_button"
+            android:text="경기장 선택"
+            android:fontFamily="@font/netmarblem"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_day"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:drawableStart="@drawable/ic_twotone_calendar_today_24px"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/bg_basic_button"
+            android:fontFamily="@font/netmarblem"
+            android:text = "날짜 선택" />
+
+
+        <FrameLayout
+            android:id="@+id/calendar_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn_time_s"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/ic_twotone_access_time_24px"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text = "시간 선택"
+            android:animateLayoutChanges="true"
+            android:fontFamily="@font/netmarblem"
+            android:background="@drawable/bg_basic_button"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:animateLayoutChanges="true">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:visibility="gone"
+            android:animateLayoutChanges="true">
+        </android.support.v4.view.ViewPager>
+
+
+        <Button
+            android:id="@+id/btn_game_select"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_twotone_videogame_asset_24px"
+            android:paddingStart="8dp"
+            android:text = "게임선택"
+            android:fontFamily="@font/netmarblem"
+            android:background="@drawable/bg_basic_button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_game1"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/btn_game2"
+
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_select_complete"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="100dp"
+            android:text="선택완료"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/netmarbleb"
+            android:background="@drawable/btn_selection_button"/>
+    </LinearLayout>
+
+</ScrollView>

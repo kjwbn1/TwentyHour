@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.kjw.twentyhour.R;
@@ -19,7 +18,7 @@ public class FoodViewAdapter extends BaseAdapter {
     private List<Food> foodData;
     private int layout;
     private LayoutInflater inflater;
-    ListView listView;
+
 
 
 

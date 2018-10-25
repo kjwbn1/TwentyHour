@@ -49,7 +49,7 @@ public class ProfileFragment extends Fragment implements ChangePasswordDialog.Li
 
     private String mToken;
     private String mEmail;
-    private BottomNavigationView bottomNavigationView;
+
 
     private CompositeSubscription mSubscriptions;
     private SharedPreferences mSharedPreferences;
@@ -79,9 +79,6 @@ public class ProfileFragment extends Fragment implements ChangePasswordDialog.Li
         mBtChangePassword = (Button) v.findViewById(R.id.btn_change_password);
         mBtLogout = (Button) v.findViewById(R.id.btn_logout);
         mProgressbar = (ProgressBar) v.findViewById(R.id.progress);
-
-        bottomNavigationView = v.findViewById(R.id.action_home);
-
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         mToken = mSharedPreferences.getString(Constants.TOKEN,"");
 

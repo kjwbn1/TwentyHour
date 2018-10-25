@@ -27,9 +27,8 @@ import java.util.ArrayList;
 public class CalculartorFragment extends Fragment {
 
     Bundle savedState;
-    Bundle fromAtivity;
 
-    ArrayList<Food> selectedFoodData;
+    private ArrayList<Food> selectedFoodData;
 
     private SelectedFoodViewAdapter mAdapter;
     private SwipeMenuListView mListView;
@@ -41,19 +40,17 @@ public class CalculartorFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_calculartor, container, false);
 
-//        if(savedInstanceState != null && savedState == null){
-//            savedState = savedInstanceState.getBundle("selectedFoodData");
-//
-//            selectedFoodData = (ArrayList<Food>)savedState.getSerializable("selectedFoodData");
-//
-//        }
-//        if (savedState != null){
-//
-//            selectedFoodData = (ArrayList<Food>)savedState.getSerializable("selectedFoodData");
-//
-//        }
+        if(savedInstanceState != null && savedState == null){
+            savedState = savedInstanceState.getBundle("selectedFoodData");
 
+            selectedFoodData = (ArrayList<Food>)savedState.getSerializable("selectedFoodData");
 
+        }
+        if (savedState != null){
+
+            selectedFoodData = (ArrayList<Food>)savedState.getSerializable("selectedFoodData");
+
+        }
 
         selectedFoodData = (ArrayList<Food>) getArguments().getSerializable("selectedFood");
 
@@ -94,7 +91,6 @@ public class CalculartorFragment extends Fragment {
             }
         };
 
-
         mListView.setMenuCreator(creator);
 
         mListView.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
@@ -114,10 +110,7 @@ public class CalculartorFragment extends Fragment {
             }
         });
 
-
         mListView.setSwipeDirection(SwipeMenuListView.DIRECTION_LEFT);
-
-
 
         return view;
     }
@@ -136,7 +129,7 @@ public class CalculartorFragment extends Fragment {
 
     private Bundle savedState() {
         Bundle state = new Bundle();
-        state.putSerializable("selectedFoodData", (Serializable) selectedFoodData);
+        state.putSerializable("selectedFoodData", (Serializable)selectedFoodData);
         return state;
 
     }

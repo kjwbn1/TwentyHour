@@ -23,11 +23,6 @@ public class TabPageAdapter extends FragmentStatePagerAdapter {
 
     }
 
-
-
-
-
-
     @Override
     public Fragment getItem(int position) {
         switch(position){

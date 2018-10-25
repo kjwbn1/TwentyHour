@@ -36,7 +36,7 @@ public class CalendarFragment extends Fragment {
     private  onSetDateListener mListener;
 
 
-    String ss;
+    String selectedFormatedDate;
     Context context;
 
 
@@ -56,10 +56,8 @@ public class CalendarFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YY년 M월 d일 (E)");
-                ss = simpleDateFormat.format(calendarView.getDate());
-                mListener.setDate(ss);
-
-
+                selectedFormatedDate = simpleDateFormat.format(calendarView.getDate());
+                mListener.setDate(selectedFormatedDate);
 
           }
       });
@@ -69,7 +67,7 @@ public class CalendarFragment extends Fragment {
 
 
 
-    private void initSharedPreferences() {
+   private void initSharedPreferences() {
 
 
     }
@@ -90,14 +88,7 @@ public class CalendarFragment extends Fragment {
 
     }
 
-
-
-
-
-
-
-
-   @Override
+    @Override
    public void onDestroy() {
        super.onDestroy();
 

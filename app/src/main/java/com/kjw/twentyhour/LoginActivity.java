@@ -29,8 +29,7 @@ public class LoginActivity extends AppCompatActivity implements ResetPasswordDia
             loadFragment();
         }
     }
-adfafafasf
-    dafsfsa
+
 
     private void loadFragment(){
 

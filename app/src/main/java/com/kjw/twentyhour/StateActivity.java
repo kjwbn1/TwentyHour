@@ -41,10 +41,10 @@ public class StateActivity extends AppCompatActivity implements ChangePasswordDi
     public static final String TAG = StateActivity.class.getSimpleName();
     private static final int TAKE_TO_PRAYGRROUND_RESULT = 0;
 
-    private View contact;
-    private View home;
-    private View more;
-    private View search;
+    public View contact;
+    public View home;
+    public View more;
+    public View search;
     private Bundle bundle;
 
     @Override

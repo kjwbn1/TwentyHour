@@ -51,7 +51,7 @@ public class LoginFragment extends Fragment {
     private TextInputLayout mTiEmail;
     private TextInputLayout mTiPassword;
     private ProgressBar mProgressBar;
-    private BottomNavigationView bottomNavigationView;
+
 
     private CompositeSubscription mSubscriptions;
     private SharedPreferences mSharedPreferences;
@@ -150,7 +150,6 @@ public class LoginFragment extends Fragment {
         mEtPassword.setText(null);
 
         Intent intent = new Intent(getActivity(),StateActivity.class);
-//        Intent intent = new Intent(getContext(),ProfileActivity.class);
         startActivity(intent);
 
 

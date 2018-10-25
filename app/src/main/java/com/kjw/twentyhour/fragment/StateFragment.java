@@ -60,14 +60,10 @@ public class StateFragment extends Fragment {
 
 
     private FrameLayout calendarFrame;
-    private FrameLayout timeFrame;
     private Button searchGround;
     public Button dayStart;
     private Button timeStart;
-    private Button timeEnd;
     private Button gameSelect;
-    private ImageView game1;
-    private ImageView game2;
     private Button gameSelectComplete;
     TimePicker timePickerS;
     TimePicker timePickerE;
@@ -284,8 +280,6 @@ public class StateFragment extends Fragment {
                     searchGround.setText(mapDataTemp);
                     editor.putString("address" , mapDataTemp);
                     editor.commit();
-
-
                 }
             }
 
@@ -317,8 +311,6 @@ public class StateFragment extends Fragment {
         dayStart = (Button) v.findViewById(R.id.btn_day);
         timeStart = (Button) v.findViewById(R.id.btn_time_s);
         gameSelect = (Button) v.findViewById(R.id.btn_game_select);
-        game1 = (ImageView) v.findViewById(R.id.btn_game1);
-        game2 = (ImageView) v.findViewById(R.id.btn_game2);
         gameSelectComplete = (Button) v.findViewById(R.id.btn_select_complete);
         calendarFrame = (FrameLayout) v.findViewById(R.id.calendar_frame);
         timePickerS = (TimePicker) v.findViewById(R.id.timepicker_start);

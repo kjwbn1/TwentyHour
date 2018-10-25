@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity implements ResetPasswordDia
 
     private LoginFragment mLoginFragment;
     private ResetPasswordDialog mResetPasswordDialog;
-
+adfasdfasdfasfasdfasfasfads
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

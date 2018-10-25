@@ -62,7 +62,7 @@ public class CalculartorFragment extends Fragment {
 
         mAdapter = new SelectedFoodViewAdapter(getContext() , R.layout.selected_menu_item , selectedFoodData);
         mListView.setAdapter(mAdapter);
-
+햣
         SwipeMenuCreator creator = new SwipeMenuCreator() {
             @Override
             public void create(SwipeMenu menu) {

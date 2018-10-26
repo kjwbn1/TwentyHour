@@ -82,7 +82,7 @@
                 android:layout_below="@+id/ti_password"
                 android:layout_marginTop="@dimen/button_margin"
                 android:paddingLeft="@dimen/button_padding"
-                android:background="@drawable/btn_selection_button"
+
                 android:paddingRight="@dimen/button_padding"
                 android:text="등록하기" />
 

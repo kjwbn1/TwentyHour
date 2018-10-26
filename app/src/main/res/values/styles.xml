@@ -1,11 +1,32 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="compatiblity" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorPrimary">@color/primaryDarkColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="BottomNavigationViewTheme" parent="AppTheme" >
+        <item name="android:textColorSecondary">@color/secondaryLightColor</item>
+        <item name="android:textColorSecondaryInverse">@color/primaryTextColor</item>
+        <item name="android:colorPrimary">@color/secondaryDarkColor</item>
+        <item name="android:textColorPrimaryInverse">@color/secondaryDarkColor</item>
+        <item name="android:windowBackground">@color/secondaryDarkColor</item>
+        <item name="android:colorBackground">@color/secondaryDarkColor</item>
     </style>
 
 </resources>

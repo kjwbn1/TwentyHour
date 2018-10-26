@@ -132,8 +132,8 @@ public class ProfileFragment extends Fragment implements ChangePasswordDialog.Li
         mTvName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), LoginActivity.class);
-
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                intent.putExtra(Constants.TOKEN, mToken);
                 startActivity(intent);
 
 

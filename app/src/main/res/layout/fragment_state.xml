@@ -30,7 +30,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="16dp"
             android:drawableStart="@drawable/ic_twotone_map_24px"
-            android:background="@drawable/bg_basic_button"
+
             android:text="경기장 선택"
             android:fontFamily="@font/netmarblem"
             android:paddingStart="8dp"
@@ -46,7 +46,7 @@
             android:drawableStart="@drawable/ic_twotone_calendar_today_24px"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:background="@drawable/bg_basic_button"
+
             android:fontFamily="@font/netmarblem"
             android:text = "날짜 선택" />
 
@@ -75,7 +75,7 @@
             android:text = "시간 선택"
             android:animateLayoutChanges="true"
             android:fontFamily="@font/netmarblem"
-            android:background="@drawable/bg_basic_button"/>
+            />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayout"
@@ -110,7 +110,7 @@
             android:paddingStart="8dp"
             android:text = "게임선택"
             android:fontFamily="@font/netmarblem"
-            android:background="@drawable/bg_basic_button"/>
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -151,7 +151,7 @@
             android:text="선택완료"
             android:textColor="@android:color/white"
             android:fontFamily="@font/netmarbleb"
-            android:background="@drawable/btn_selection_button"/>
+            />
     </LinearLayout>
 
 </ScrollView>

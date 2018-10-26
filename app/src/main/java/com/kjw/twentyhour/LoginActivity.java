@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.kjw.twentyhour.fragment.LoginFragment;
 import com.kjw.twentyhour.fragment.ResetPasswordDialog;
+import com.kjw.twentyhour.utils.Constants;
 
 
 public class LoginActivity extends AppCompatActivity implements ResetPasswordDialog.Listener {
@@ -44,13 +45,14 @@ public class LoginActivity extends AppCompatActivity implements ResetPasswordDia
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
 
-        String data = intent.getData().getLastPathSegment();
-        Log.d(TAG, "onNewIntent: "+data);
 
-        mResetPasswordDialog = (ResetPasswordDialog) getFragmentManager().findFragmentByTag(ResetPasswordDialog.TAG);
-
-        if (mResetPasswordDialog != null)
-            mResetPasswordDialog.setToken(data);
+//        String data = intent.getStringExtra(Constants.TOKEN);
+//        Log.d(TAG, "onNewIntent: "+data);
+//
+//        mResetPasswordDialog = (ResetPasswordDialog) getFragmentManager().findFragmentByTag(ResetPasswordDialog.TAG);
+//
+//        if (mResetPasswordDialog != null)
+//            mResetPasswordDialog.setToken(data);
     }
 
     @Override

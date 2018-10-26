@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/card"
         android:layout_marginTop="@dimen/button_margin"
-        android:background="@drawable/btn_selection_button"
+
         android:paddingLeft="@dimen/button_padding"
         android:paddingRight="@dimen/button_padding"
         android:text="비밀번호변경"
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_change_password"
         android:layout_marginTop="@dimen/button_margin"
-        android:background="@drawable/btn_selection_button"
+
         android:drawableRight="@drawable/bg_basic_button"
         android:paddingLeft="@dimen/button_padding"
         android:paddingRight="@dimen/button_padding"

@@ -178,8 +178,8 @@ public class NMapViewerResourceProvider extends NMapResourceProvider implements
 	// Resource Ids for single icons
 	private final ResourceIdsOnMap mResourceIdsForMarkerOnMap[] = {
 		// Spot, Pin icons
-		new ResourceIdsOnMap(NMapPOIflagType.PIN, R.drawable.ic_pin_01, R.drawable.ic_pin_02),
-		new ResourceIdsOnMap(NMapPOIflagType.SPOT, R.drawable.ic_pin_01, R.drawable.ic_pin_02),
+		new ResourceIdsOnMap(NMapPOIflagType.PIN, R.drawable.ic_map_pin_01, R.drawable.ic_map_pin_02),
+		new ResourceIdsOnMap(NMapPOIflagType.SPOT, R.drawable.ic_map_pin_01, R.drawable.ic_map_pin_02),
 
 		// Direction POI icons: From, To
 		new ResourceIdsOnMap(NMapPOIflagType.FROM, R.drawable.ic_map_start, R.drawable.ic_map_start_over),
@@ -268,7 +268,7 @@ public class NMapViewerResourceProvider extends NMapResourceProvider implements
 	@Override
 	public Drawable getDirectionArrow() {
 
-		Drawable drawable = mContext.getResources().getDrawable(R.drawable.ic_angle);
+		Drawable drawable = mContext.getResources().getDrawable(R.drawable.ic_map_angle);
 
 		if (drawable != null) {
 			int w = drawable.getIntrinsicWidth() / 2;
@@ -375,7 +375,7 @@ public class NMapViewerResourceProvider extends NMapResourceProvider implements
 			NMapPOIitem poiItem = (NMapPOIitem)item;
 
 			if (poiItem.showRightButton()) {
-				Drawable drawable = mContext.getResources().getDrawable(R.drawable.bg_speech);
+				Drawable drawable = mContext.getResources().getDrawable(R.drawable.bg_map_speech);
 				return drawable;
 			}
 		}
@@ -406,9 +406,9 @@ public class NMapViewerResourceProvider extends NMapResourceProvider implements
 			if (poiItem.showRightButton()) {
 				Drawable[] drawable = new Drawable[3];
 
-				drawable[0] = mContext.getResources().getDrawable(R.drawable.btn_green_normal);
-				drawable[1] = mContext.getResources().getDrawable(R.drawable.btn_green_pressed);
-				drawable[2] = mContext.getResources().getDrawable(R.drawable.btn_green_highlight);
+				drawable[0] = mContext.getResources().getDrawable(R.drawable.btn_map_green_normal);
+				drawable[1] = mContext.getResources().getDrawable(R.drawable.btn_map_green_pressed);
+				drawable[2] = mContext.getResources().getDrawable(R.drawable.btn_map_green_highlight);
 
 				return drawable;
 			}

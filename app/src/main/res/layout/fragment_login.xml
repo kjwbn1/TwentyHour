@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/secondaryLightColor">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,8 +38,8 @@
                     android:id="@+id/et_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="예) 1234@gamil.com"
-                    android:drawableStart="@drawable/ic_email"
+                    android:hint="@string/hint_email"
+                    android:fontFamily="@font/netmarbleb"
                     android:inputType="textEmailAddress" />
 
             </android.support.design.widget.TextInputLayout>
@@ -50,14 +51,14 @@
                 android:layout_below="@+id/ti_email"
                 android:layout_marginTop="@dimen/child_margin_top"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@android:color/holo_blue_dark">
+                app:passwordToggleTint="@color/primaryDarkColor">
 
                 <EditText
                     android:id="@+id/et_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="비밀번호를 여기에 입력하세요."
-                    android:drawableStart="@drawable/ic_password"
+                    android:hint="@string/hint_password"
+                    android:fontFamily="@font/netmarbleb"
                     android:inputType="textPassword" />
 
             </android.support.design.widget.TextInputLayout>
@@ -70,8 +71,10 @@
                 android:layout_marginTop="@dimen/button_margin"
                 android:paddingLeft="@dimen/button_padding"
                 android:paddingRight="@dimen/button_padding"
-                android:text="로그인"
-
+                android:background="@drawable/bg_btn_main"
+                android:text="@string/login"
+                android:textSize="14sp"
+                android:fontFamily="@font/netmarbleb"
                 android:textAlignment="center" />
 
             <TextView
@@ -79,6 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/btn_login"
+                android:textSize="12sp"
                 android:layout_marginTop="@dimen/button_margin"
                 android:text="@string/btn_link_to_register"
                 android:textAlignment="center" />
@@ -88,6 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_register"
+                android:textSize="12sp"
                 android:layout_marginTop="@dimen/button_margin"
                 android:text="@string/btn_link_to_resetpassword"
                 android:textAlignment="center" />

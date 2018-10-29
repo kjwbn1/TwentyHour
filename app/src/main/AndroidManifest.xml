@@ -47,11 +47,11 @@
             android:launchMode="singleTask"
             android:theme="@style/compatiblity"/>
         <activity android:name=".view.NmapActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/compatiblity"/>
         <activity android:name=".view.CalendarPickerView"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/compatiblity"/>
         <activity android:name=".view.MenuSelectionView"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/compatiblity"/>
 
 
 

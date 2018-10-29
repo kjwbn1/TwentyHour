@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,10 +62,10 @@ public class StateFragment extends Fragment {
 
     private FrameLayout calendarFrame;
     private Button searchGround;
-    public Button dayStart;
+    public  Button dayStart;
     private Button timeStart;
     private Button gameSelect;
-    private Button gameSelectComplete;
+    private Button selectionComplete;
     TimePicker timePickerS;
     TimePicker timePickerE;
 
@@ -172,7 +173,7 @@ public class StateFragment extends Fragment {
             }
         });
 
-        gameSelectComplete.setOnClickListener(new View.OnClickListener() {
+        selectionComplete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -311,7 +312,7 @@ public class StateFragment extends Fragment {
         dayStart = (Button) v.findViewById(R.id.btn_day);
         timeStart = (Button) v.findViewById(R.id.btn_time_s);
         gameSelect = (Button) v.findViewById(R.id.btn_game_select);
-        gameSelectComplete = (Button) v.findViewById(R.id.btn_select_complete);
+        selectionComplete = (Button) v.findViewById(R.id.btn_select_complete);
         calendarFrame = (FrameLayout) v.findViewById(R.id.calendar_frame);
         timePickerS = (TimePicker) v.findViewById(R.id.timepicker_start);
         timePickerE = (TimePicker) v.findViewById(R.id.timepicker_end);

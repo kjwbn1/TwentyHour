@@ -13,11 +13,12 @@
     </style>
 
     <style name="compatiblity" parent="Theme.AppCompat.Light.NoActionBar" >
-        <item name="colorPrimary">@color/primaryDarkColor</item>
-        <item name="colorPrimaryDark">@color/primaryColor</item>
-        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
         <item name="android:textColorPrimary">@color/primaryTextColor</item>
         <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
     </style>
 
     <style name="BottomNavigationViewTheme" parent="AppTheme" >

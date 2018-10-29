@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.kjw.twentyhour.data.Time;
+import com.kjw.twentyhour.dialogs.StoreSelectionDialog;
 import com.kjw.twentyhour.fragment.CalendarFragment;
 import com.kjw.twentyhour.fragment.ChangePasswordDialog;
 import com.kjw.twentyhour.fragment.ProfileFragment;
@@ -56,6 +57,7 @@ public class StateActivity extends AppCompatActivity implements ChangePasswordDi
 
         ModelInit();
         LoadFragmentState();
+        LoadDialogStoreSelection();
         initView();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -158,6 +160,15 @@ public class StateActivity extends AppCompatActivity implements ChangePasswordDi
 
     }
 
+    private void LoadDialogStoreSelection() {
+        StoreSelectionDialog storeSelectionDialog = new StoreSelectionDialog();
+        storeSelectionDialog.show(getFragmentManager() , "aa");
+
+
+
+
+    }
+
     private void ModelInit() {
         time = new Time();
     }
@@ -242,6 +253,7 @@ public class StateActivity extends AppCompatActivity implements ChangePasswordDi
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
         bottomNavigationView.setSelectedItemId(R.id.action_home);
+
 
         contact = (View) findViewById(R.id.action_contact);
         home    = (View) findViewById(R.id.action_home);

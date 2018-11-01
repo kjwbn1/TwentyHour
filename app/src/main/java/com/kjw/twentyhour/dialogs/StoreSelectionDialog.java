@@ -8,9 +8,11 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,10 +46,12 @@ public class StoreSelectionDialog extends DialogFragment {
         builder.setView(inflater.inflate(R.layout.dialog_store_selection, null));
 
 
+
         AlertDialog dialog = builder.create();
-        Drawable drawable = getActivity().getDrawable(R.drawable.bg_dialog_main);
-        dialog.getWindow().setBackgroundDrawable(drawable);
-//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//        Window window = dialog.getWindow();
+//        window.setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//        window.setGravity(Gravity.CENTER);
 
         ButterKnife.bind(this, dialog);
 

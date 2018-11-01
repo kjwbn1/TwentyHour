@@ -43,7 +43,7 @@ public class CalculartorFragment extends Fragment {
         if(savedInstanceState != null && savedState == null){
             savedState = savedInstanceState.getBundle("selectedFoodData");
 
-<<<<<<< HEAD
+
             selectedFoodData = (ArrayList<Food>)savedState.getSerializable("selectedFoodData");
 
         }
@@ -52,9 +52,7 @@ public class CalculartorFragment extends Fragment {
             selectedFoodData = (ArrayList<Food>)savedState.getSerializable("selectedFoodData");
 
         }
-=======
-        fromAtivity = getArguments();
->>>>>>> 8a2f3000be8a8a2caa036de67357ff661ff15d31
+
 
         selectedFoodData = (ArrayList<Food>) getArguments().getSerializable("selectedFood");
 
@@ -63,7 +61,7 @@ public class CalculartorFragment extends Fragment {
 
         mAdapter = new SelectedFoodViewAdapter(getContext() , R.layout.selected_menu_item , selectedFoodData);
         mListView.setAdapter(mAdapter);
-햣
+
         SwipeMenuCreator creator = new SwipeMenuCreator() {
             @Override
             public void create(SwipeMenu menu) {
